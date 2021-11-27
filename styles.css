@@ -1,0 +1,192 @@
+:root {
+    --bg-pr: #388697;
+    --cta: #FA8334;
+    --cta-sec: #FFFD77;
+    --focus: #FFE882;
+    --title-color: #271033;
+    --text-white: whitesmoke;
+
+}
+
+
+
+
+body {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+
+h1,h2,h3 {
+    font-family: 'Roboto', sans-serif;
+}
+h2, h3 {
+    color:var(--title-color);
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mr-0 {
+    margin-right: 0!important;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+
+/*Inicio*/
+
+
+/*Sections*/
+section {
+    margin: 2em 0;
+    padding: 1em
+}
+
+
+/*Header*/
+header{
+ background-color: var(--bg-pr);
+ color: var(--text-white);
+ padding: 1em 0em;;
+ 
+    
+}
+
+.logo {
+    text-align: center;
+    
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.4rem;
+}
+.subtitle {
+    margin: 0;
+    font-size: 0.8rem;
+}
+.nav-list {
+    display: flex;
+    
+    
+}
+.nav-list li {
+    margin-right: 1em;
+}
+li {
+    padding : 0px;
+}
+.nav-list a {
+    color: var(--text-white);
+}
+.nav-list a:hover {
+    color: var(--focus);
+}
+
+.nav-list ul {
+    display: none;
+}
+
+.nav-list li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: var(--bg-pr);
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+/*CardsCourses*/
+.card {
+    min-width: 30%;
+    margin: 0.5em;
+    border-radius: 12px 12px 0 0;
+    
+     
+}
+.card-text {
+    margin-bottom:  1em;
+    padding: 0 0.5em;
+}
+
+.card-tip {
+    overflow: hidden;
+}
+
+.card-tip h3 {
+    background-color: var(--cta);
+    color: white;
+    margin:0;
+    padding: 1em;
+}
+
+.card-tip p {
+    padding: 0 1em;
+} 
+
+.card-shadow {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/*Tema1*/
+
+
+.box-img {
+    max-width: 55%;
+
+}
+
+.btn {
+    background-color: var(--cta);
+    display: inline-block;
+    color: #fff;
+    padding: 0.45em 1.45em;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+  
+}
+.btn:hover {
+    opacity: 0.75;
+
+}
+/*Sub-tema2 */ 
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+
+
+
+
+
+
