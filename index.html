@@ -45,16 +45,36 @@
             </div>
             <div class=" card card-shadow flex-grow">
                 <div>
-                    <img src="imgs/sofasalalp.jpg" alt= "#">
+                    <img src="imgs/alunate.jpg" alt= "#">
                 </div>
                 <div class="card-text">
                     <h2>Tema 2</h2>
                     <p><span>2 horas|2 módulos</span></p>
                     <p>Profesor:<span>Juan Chavez</span></p> 
-                    <a class="btn" href="tema2.html">Ver tema</a>
+                    <div id="btns-container">
+                        <a class="btn" href="tema2.html">Ver tema</a>
+                        <a id="toggle" class="btn" href="#">Ver subtemas</a>
+                    </div>
                 </div>
             </div> 
         </div>
     </section>
+    <script>
+        document.getElementById('toggle').addEventListener('click', (e) => {
+            e.preventDefault();
+            let container = document.getElementById('btns-container');
+            let btn_tema = container.firstElementChild;
+            container.textContent = '';
+            container.append(btn_tema);
+            let pages = ['tema2-1.html', 'tema2-2.html'];
+            pages.forEach((page, index) => {
+                let a = document.createElement('a');
+                a.href = page;
+                a.textContent = `Subtema ${index + 1}`;
+                a.setAttribute('class', 'btn btn-st');
+                container.append(a);
+            });
+        });
+    </script>
 </body>
 </html>

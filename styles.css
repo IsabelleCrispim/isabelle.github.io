@@ -56,7 +56,15 @@ ul {
 }
 
 /*Inicio*/
+.btns-container {
+    display: flex;
+}
 
+a.btn-st {
+    font-size: 0.8em;
+    background-color: var(--bg-pr);
+    margin: 0 0.5em;
+}
 
 /*Sections*/
 section {
